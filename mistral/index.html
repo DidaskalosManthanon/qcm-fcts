@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCMs de Mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <h1>QCMs de mathématiques (niveau 3<sup>ème</sup> - 2<sup>de</sup>)</h1>
+    </header>
+
+    <main>
+        <section class="quiz">
+            <article id="geometrie">
+                <h2>Géométrie</h2>
+                <form id="quiz-form">
+                    <ol start="1">
+                        <li class="question" data-points="1" data-type="radio">
+                            <p>
+                                <strong>Question :</strong>
+                                On considère un carré de côté 5. Quelle est la longueur de sa diagonale ?
+                                <br><strong><em>Une</em> seule <em>réponse</em> est <em>correcte</em>.</strong>
+                            </p>
+                            <ul class="options">
+                                <li>
+                                    <label><input type="radio" name="q1"> \(2\sqrt{5}\)</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="q1"> \(\sqrt{5 	imes 2}\)</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="q1"> \(\sqrt{2 	imes 5}\)</label>
+                                </li>
+                                <li>
+                                    <label><input type="radio" name="q1" data-correct> \(5\sqrt{2}\)</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Additional questions can be added here -->
+                    </ol>
+                    <button type="button" id="submit-btn">Soumettre</button>
+                </form>
+                <div id="score-details">
+                    <p id="score-display"></p>
+                    <ul id="question-points"></ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - <strong>Didaskalos Manthanon</strong>, <em>Apprenez à devenir un maître apprenant</em></p>
+        <ul>
+            <li>
+                <a href="https://didaskalosmanthanon.github.io/quizz/index.html" target="_blank">QCMs de mathématiques (niveau 3<sup>ème</sup> - 2<sup>de</sup>)</a>
+            </li>
+            <li>
+                <a href="https://didaskalosmanthanon.github.io/quizz-stats-3eme/index.html" target="_blank">QCMs de stats (niveau 3<sup>ème</sup> - 2<sup>de</sup>)</a>
+            </li>
+            <li>
+                <a href="https://didaskalosmanthanon.github.io/quizz-fonctions-3eme/index.html" target="_blank">QCMs sur les fonctions</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

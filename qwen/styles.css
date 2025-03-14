@@ -1,0 +1,92 @@
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+
+h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+}
+
+header li {
+    font-family: Monaco, sans-serif;
+    font-size: 1.25em;
+}
+
+section {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.15rem;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+input {
+    margin: 5%;
+}
+
+#fx2m3, #f5mc {
+    width: 50%;
+    height: 25%;
+    margin: 2%;
+}
+
+table {
+    margin: 2.5% 0 2.5% 9%;
+}
+
+#yourgame {
+    counter-reset: q-counter;
+    margin: 2%;
+}
+
+#yourgame ol:not(.progcalc, .resp) {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#yourgame ol:not(.progcalc, .resp) > li {
+    counter-increment: q-counter;
+    margin-top: 2%;
+}
+
+#yourgame ol:not(.progcalc, .resp) > li::before {
+    content: "Question " counter(q-counter) ". ";
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.progcalc {
+    list-style-type: lower-roman;
+    padding-left: 2em;
+    counter-reset: none;
+}
+
+.progcalc li {
+    list-style-type: lower-roman;
+    counter-increment: none;
+}
+
+.resp {
+    list-style-type: lower-alpha;
+    padding-left: 2em;
+    counter-reset: none;
+    background-color: orange;
+    margin: 2%;
+    padding: 2%;
+    display: inline-block;
+    width: auto;
+}
+
+.resp li {
+    list-style-type: lower-alpha;
+    counter-increment: none;
+}
+
+td {
+    text-align: center;
+    padding: 5%;
+}

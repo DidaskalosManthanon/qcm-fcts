@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM sur les fonctions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+</head>
+<body>
+    <header>
+        <h1>QCM sur les fonctions (niveau 3<sup>ème</sup>)</h1>
+        <h2>Voir les <a href="https://eduscol.education.fr/document/14068/download" target="_blank">attendus du programme</a></h2>
+    </header>
+    
+    <main>
+        <section id="yourgame">
+            <h2>À vous de jouer</h2>
+            <article>
+                <h3>Notations et vocabulaire fonctionnels</h3>
+                <ol class="questions">
+                    <li>
+                        <p>Quelles notations traduisent la phrase : "\(f\) associe à un nombre le double de son cube augmenté de cinq" ?</p>
+                        <ol class="resp">
+                            <li><input type="radio" name="q1" value="f(x) = 2x^3 + 5"> \(f(x) = 2x^3 + 5\)</li>
+                            <li><input type="radio" name="q1" value="f : x\mapsto 2x^3 + 5"> \(f : x\mapsto 2x^3 + 5\)</li>
+                        </ol>
+                    </li>
+                </ol>
+                <button onclick="validateQuiz()">Valider</button>
+                <p id="result"></p>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
